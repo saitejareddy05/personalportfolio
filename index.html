@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurora Portfolio</title>
+  <meta name="description" content="A modern responsive personal portfolio built with HTML, CSS, and JavaScript." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top">Ava<span>Lens</span></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero container">
+      <p class="tag">Creative Developer • Visual Storyteller</p>
+      <h1>
+        I design <span class="gradient">bright digital experiences</span>
+        that feel human and memorable.
+      </h1>
+      <p class="intro">
+        A portfolio concept with a soft light palette, glass surfaces, and motion accents.
+        Built using only HTML, CSS, and JavaScript.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Hire Me</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="about container" id="about">
+      <article class="panel">
+        <h2>About Me</h2>
+        <p>
+          I blend clean code with elegant UI details to craft websites that are quick,
+          accessible, and emotionally engaging. I enjoy building interfaces where every
+          section tells a clear story.
+        </p>
+      </article>
+      <article class="panel metrics">
+        <div>
+          <h3>4+</h3>
+          <p>Years of experience</p>
+        </div>
+        <div>
+          <h3>32</h3>
+          <p>Completed projects</p>
+        </div>
+        <div>
+          <h3>11</h3>
+          <p>Happy clients</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="projects container" id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <article class="card">
+          <span>UI/UX</span>
+          <h3>Bloom Dashboard</h3>
+          <p>A pastel analytics dashboard with intuitive data flow and polished interactions.</p>
+        </article>
+        <article class="card">
+          <span>Web App</span>
+          <h3>Calm Notes</h3>
+          <p>A note-taking experience focused on focus mode, keyboard control, and subtle animation.</p>
+        </article>
+        <article class="card">
+          <span>Brand Site</span>
+          <h3>Luma Studio</h3>
+          <p>Brand-forward website with layered gradients, micro-interactions, and high accessibility.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills container" id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+        <span>Accessibility</span>
+        <span>Performance</span>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <article class="panel">
+        <h2>Let’s Build Something Great</h2>
+        <p>Open for freelance and full-time opportunities.</p>
+        <form class="contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="your@email.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> AvaLens Portfolio. Crafted with light and detail.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
